@@ -2,16 +2,17 @@ import './App.css';
 import GallaryFooter from './components/GallaryFooter';
 import GalleryHeader from './components/GalleryHeader';
 import GalleryBody from './components/GalleryBody';
-import data from './components/Data.jsx';
+
 
  
 
-function App() {
+function App(props) {
+  const Data=props.lake
   return (
     <div>
       <GalleryHeader/>
 
-      <GalleryBody lake = {data}/>
+      <GalleryBody lake = {Data}/>
 
 
       {/* adding footer component */}
